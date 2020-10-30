@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Responsive Website</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="top">
+      <header class="party">
+        <h1>Sinu keitering, sinu halloween!</h1>
+        <p>Telli imemaitsvad toidud meilt!</p>
+      </header>
+      <div class="cta cta1">
+        <p class="price">Suupisted</p>
+        <p>Hinnad alates 2.50€</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">Joogid</p>
+        <p>Hinnad alates 1.50€</p>
+      </div>
+      <div class="cta cta3">
+        <p class="price">Magustoidud</p>
+        <p>Hinnad alates 4.99€</p>
+      </div>
+
+    </div>
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="">Suupisted</a>
+        </li>
+        <li>
+          <a href="">Joogid</a>
+        </li>
+        <li>
+          <a href="">Magustoidud</a>
+        </li>
+        <li>
+          <a href="">Reservatsioon</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Snäkid</h3>
+        <p>Snäkid on harilikult mõnusaks vahepalaks toidukordade vahel või pisikesed ampsud pidudele ja õhtul televiisori vaatamise kõrvale. Snäkid on tihti asendamatud abimehed, kui kiiresti on vaja võõrustada külalisi või võita aega kuni pearoog valmib. Snäkid on toidud, mida on kiire ja lihtne valmistada ning hõlbus süüa.</p>
+      </div>
+      <div class="feature">
+        <h3>Joogid</h3>
+        <p>KARASTUSJOOGID, MAHLAD, PIIM
+            Evian
+            50 cl
+            
+            2.00
+            Vichy
+            50 cl
+            
+            2.00
+            Coca-Cola, Fanta, Sprite
+            50 cl
+            
+            2.50
+            Nestea Ice Tea, Cappy Ice Fruit
+            50 cl
+            
+            2.50
+            </p>
+      </div>
+      <div class="feature">
+        <h3>Muusika</h3>
+        <p>Võimalik tellida ka muusika meie tagasihoidlikust ettevõttest. Tavaliselt on igal pool restorandises ja poodides alati healoomuline muusika, et teie, kas siis õhtusöök või poes käimine kulgeks rõõmsalt ja meeldejäävalt. Pakume ka meie väikse lisatasu eest meeldivat muusikat, aga selleks andke meile varakult teada!.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="img/kõrvitsakook.jpg" alt="Kõrvitsakoogid" class="about__mockup">
+      <div class="about__details">
+        <h2>Meie uued imemaitsvad kõrvitsakoogid teie peo jaoks</h2>
+        <p>Imehea maitsega ja natukene vürtsikad kõrvitsakoogid just teile!</p>
+        <p>Seda sa pead lihtsalt proovima!</p>
+        <button>Lisa info →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Muud ettevõtte söögid</h2>
+      <img src="img/korvitsasupp-retsept-1.jpg" alt="">
+      <img src="img/luuad-retsept.jpg" alt="">
+      <img src="img/noianapud-retseptisahtel2-1.jpg" alt="">
+      <img src="img/rullbiskviit-retsept.jpg" alt="">
+      <img src="img/halloweenapples.jpg" alt="">
+      <img src="img/luukere.jpg" alt="">
+      <img src="img/lapsed.jpg" alt="">
+      <img src="img/pead.jpg" alt="">
+      <img src="img/ohoo.jpg" alt="">
+      <img src="img/õudsadburksid.jpg" alt="">
+      <img src="img/Arbuus.jpg" alt="">
+      <img src="img/näod.jpg" alt="">
+      <img src="img/piparkoogid.jpg" alt="">
+      <img src="img/makroonid.jpg" alt="">
+      <img src="img/munad.jpg" alt="">
+    </section>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector('button[aria-expanded]');
+    function toggleMenu({target}) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      menuButton.setAttribute('aria-expanded', !expanded);
+      console.log("Toggle!");
+      
+    }
+
+    menuButton.addEventListener('click', toggleMenu)
+  </script>
+  
+</body>
+
+</html>
